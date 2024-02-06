@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		551F74A82B72D32100F40934 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74A72B72D32100F40934 /* ScrumdingerApp.swift */; };
-		551F74AA2B72D32100F40934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74A92B72D32100F40934 /* ContentView.swift */; };
+		551F74AA2B72D32100F40934 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74A92B72D32100F40934 /* MeetingView.swift */; };
 		551F74AC2B72D32500F40934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551F74AB2B72D32500F40934 /* Assets.xcassets */; };
 		551F74AF2B72D32500F40934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551F74AE2B72D32500F40934 /* Preview Assets.xcassets */; };
 		551F74D02B72D91500F40934 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 551F74CF2B72D91500F40934 /* .gitignore */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		551F74A42B72D32100F40934 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		551F74A72B72D32100F40934 /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
-		551F74A92B72D32100F40934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		551F74A92B72D32100F40934 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		551F74AB2B72D32500F40934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551F74AE2B72D32500F40934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		551F74CF2B72D91500F40934 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				551F74A72B72D32100F40934 /* ScrumdingerApp.swift */,
-				551F74A92B72D32100F40934 /* ContentView.swift */,
+				551F74A92B72D32100F40934 /* MeetingView.swift */,
 				551F74AB2B72D32500F40934 /* Assets.xcassets */,
 				551F74AD2B72D32500F40934 /* Preview Content */,
 			);
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551F74AA2B72D32100F40934 /* ContentView.swift in Sources */,
+				551F74AA2B72D32100F40934 /* MeetingView.swift in Sources */,
 				551F74A82B72D32100F40934 /* ScrumdingerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +284,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +314,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
