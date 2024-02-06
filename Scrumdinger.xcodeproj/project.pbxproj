@@ -65,7 +65,7 @@
 				551F74A72B72D32100F40934 /* ScrumdingerApp.swift */,
 				551F74D12B72E32800F40934 /* Models */,
 				551F74D62B72E4FF00F40934 /* Views */,
-				551F74DB2B72F05200F40934 /* Components */,
+				551F74DB2B72F05200F40934 /* Styles */,
 				551F74AB2B72D32500F40934 /* Assets.xcassets */,
 				551F74AD2B72D32500F40934 /* Preview Content */,
 			);
@@ -98,12 +98,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		551F74DB2B72F05200F40934 /* Components */ = {
+		551F74DB2B72F05200F40934 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
 				551F74D92B72F04D00F40934 /* TrailingIconLabelStyle.swift */,
 			);
-			path = Components;
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

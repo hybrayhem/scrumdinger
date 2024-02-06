@@ -14,12 +14,15 @@ struct CardView: View {
         VStack(alignment: .leading) {
             Text(scrum.title)
                 .font(.headline)
+                .accessibilityAddTraits(.isHeader) // scrum.title followed by "heading."
             Spacer()
             HStack {
                 Label("\(scrum.attendees.count)", systemImage: "person.3")
+                    .accessibilityLabel("\(scrum.attendees.count) attendees")
                 Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
-                    .padding(.trailing, 20)
+                    .accessibilityLabel("\(scrum.lengthInMinutes) minutes meeting length")
+                    .labelStyle(.trailingIcon)
             }
             .font(.caption)
         }
@@ -37,6 +40,5 @@ struct CardView: View {
     
     let cardView = CardView(scrum: scrum)
         .background(scrum.theme.mainColor)
-//        .previewLayout(.fixed(width: 400, height: 60)) // Not working with macro
     return cardView
 }
