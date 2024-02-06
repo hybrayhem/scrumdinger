@@ -54,6 +54,7 @@
 		551F74A62B72D32100F40934 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				551F74D12B72E32800F40934 /* Models */,
 				551F74A72B72D32100F40934 /* ScrumdingerApp.swift */,
 				551F74A92B72D32100F40934 /* MeetingView.swift */,
 				551F74AB2B72D32500F40934 /* Assets.xcassets */,
@@ -68,6 +69,13 @@
 				551F74AE2B72D32500F40934 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		551F74D12B72E32800F40934 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
