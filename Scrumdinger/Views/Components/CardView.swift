@@ -17,10 +17,10 @@ struct CardView: View {
                 .accessibilityAddTraits(.isHeader) // scrum.title followed by "heading."
             Spacer()
             HStack {
-                Label("\(scrum.attendees.count)", systemImage: "person.3")
+                Label("\(scrum.attendees.count)", systemImage: SFSymbols.person_3.name)
                     .accessibilityLabel("\(scrum.attendees.count) attendees")
                 Spacer()
-                Label("\(scrum.lengthInMinutes)", systemImage: "clock")
+                Label("\(scrum.lengthInMinutes)", systemImage: SFSymbols.clock.name)
                     .accessibilityLabel("\(scrum.lengthInMinutes) minutes meeting length")
                     .labelStyle(.trailingIcon)
             }

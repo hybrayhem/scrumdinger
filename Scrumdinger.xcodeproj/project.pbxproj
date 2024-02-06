@@ -17,6 +17,8 @@
 		551F74D82B72E50C00F40934 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74D72B72E50C00F40934 /* CardView.swift */; };
 		551F74DA2B72F04D00F40934 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74D92B72F04D00F40934 /* TrailingIconLabelStyle.swift */; };
 		551F74DD2B72F43600F40934 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74DC2B72F43600F40934 /* ScrumsView.swift */; };
+		551F74E02B72F98C00F40934 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74DF2B72F98C00F40934 /* SFSymbols.swift */; };
+		551F74E32B72FAA300F40934 /* String+caseConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74E22B72FAA300F40934 /* String+caseConversion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		551F74D72B72E50C00F40934 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		551F74D92B72F04D00F40934 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		551F74DC2B72F43600F40934 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		551F74DF2B72F98C00F40934 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		551F74E22B72FAA300F40934 /* String+caseConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+caseConversion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				551F74A72B72D32100F40934 /* ScrumdingerApp.swift */,
+				551F74E12B72FA8D00F40934 /* Extensions */,
 				551F74D12B72E32800F40934 /* Models */,
 				551F74D62B72E4FF00F40934 /* Views */,
-				551F74DB2B72F05200F40934 /* Styles */,
 				551F74AB2B72D32500F40934 /* Assets.xcassets */,
 				551F74AD2B72D32500F40934 /* Preview Content */,
 			);
@@ -85,8 +89,9 @@
 		551F74D12B72E32800F40934 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				551F74D22B72E35400F40934 /* Theme.swift */,
 				551F74D42B72E3DC00F40934 /* DailyScrum.swift */,
+				551F74D22B72E35400F40934 /* Theme.swift */,
+				551F74DF2B72F98C00F40934 /* SFSymbols.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -94,9 +99,10 @@
 		551F74D62B72E4FF00F40934 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				551F74A92B72D32100F40934 /* MeetingView.swift */,
-				551F74D72B72E50C00F40934 /* CardView.swift */,
 				551F74DC2B72F43600F40934 /* ScrumsView.swift */,
+				551F74A92B72D32100F40934 /* MeetingView.swift */,
+				551F74DE2B72F67F00F40934 /* Components */,
+				551F74DB2B72F05200F40934 /* Styles */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +113,22 @@
 				551F74D92B72F04D00F40934 /* TrailingIconLabelStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		551F74DE2B72F67F00F40934 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				551F74D72B72E50C00F40934 /* CardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		551F74E12B72FA8D00F40934 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				551F74E22B72FAA300F40934 /* String+caseConversion.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +206,9 @@
 				551F74DA2B72F04D00F40934 /* TrailingIconLabelStyle.swift in Sources */,
 				551F74D32B72E35400F40934 /* Theme.swift in Sources */,
 				551F74DD2B72F43600F40934 /* ScrumsView.swift in Sources */,
+				551F74E02B72F98C00F40934 /* SFSymbols.swift in Sources */,
 				551F74AA2B72D32100F40934 /* MeetingView.swift in Sources */,
+				551F74E32B72FAA300F40934 /* String+caseConversion.swift in Sources */,
 				551F74A82B72D32100F40934 /* ScrumdingerApp.swift in Sources */,
 				551F74D82B72E50C00F40934 /* CardView.swift in Sources */,
 			);
@@ -328,7 +352,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,7 +382,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
