@@ -12,7 +12,7 @@ struct DetailEditView: View {
     @State private var scrum = DailyScrum.emptyScrum
     @State private var newAttendeeName = ""
     
-    // MARK: - Body
+    // MARK: - View
     var body: some View {
         Form {
             Section(header: Text("Meeting Info")) {
@@ -53,7 +53,7 @@ struct DetailEditView: View {
         }
     }
     
-    // MARK: - Logic
+    // MARK: - Methods
     private var lengthInMinutesString: String {
         String(format: "%2d minutes", scrum.lengthInMinutes)
     }
