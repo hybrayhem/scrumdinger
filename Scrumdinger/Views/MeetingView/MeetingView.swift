@@ -16,23 +16,7 @@ struct MeetingView: View {
                 .fill(scrum.theme.mainColor)
             VStack {
                 // Header Progress
-                ProgressView(value: 5, total: 15)
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Seconds Elapsed")
-                            .font(.caption)
-                        Label("300", symbol: .hourglass_tophalf_fill)
-                    }
-                    Spacer()
-                    VStack(alignment: .trailing) {
-                        Text("Seconds Remaining")
-                            .font(.caption)
-                        Label("600", symbol: .hourglass_bottomhalf_fill)
-                    }
-                }
-                .accessibilityElement(children: .ignore)
-                .accessibilityLabel("Time remaining")
-                .accessibilityValue("10 minutes") // Update this programmatically
+                MeetingHeaderView(secondsElapsed: 15, secondsRemaining: 20, theme: scrum.theme)
                 
                 // Mid Circular
                 Circle()
