@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct DetailEditView: View {
-    // States
+    // MARK: - States
     @State private var scrum = DailyScrum.emptyScrum
     @State private var newAttendeeName = ""
     
-    // Body
+    // MARK: - Body
     var body: some View {
         Form {
             Section(header: Text("Meeting Info")) {
@@ -21,8 +21,10 @@ struct DetailEditView: View {
                     Slider(value: $scrum.lengthInMinutesAsDouble, in: 5...30, step: 1, label: {
                         Text("Length")
                     })
+                    .accessibilityValue(lengthInMinutesString)
                     Spacer()
                     Text(lengthInMinutesString).monospacedDigit()
+                        .accessibilityHidden(true)
                 }
             }
             
@@ -43,6 +45,7 @@ struct DetailEditView: View {
                         }
                     }) {
                         Image(symbol: .plus_circle_fill)
+                            .accessibilityLabel("Add attendee")
                     }
                     .disabled(isNewAttendeeNameEmpty)
                 }
@@ -50,7 +53,7 @@ struct DetailEditView: View {
         }
     }
     
-    // Logic
+    // MARK: - Logic
     private var lengthInMinutesString: String {
         String(format: "%2d minutes", scrum.lengthInMinutes)
     }
