@@ -30,6 +30,7 @@
 		551F75012B74054100F40934 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 551F75002B74054100F40934 /* ding.wav */; };
 		551F75032B740D1300F40934 /* CornerRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75022B740D1300F40934 /* CornerRoundedRectangle.swift */; };
 		551F75052B74182500F40934 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75042B74182500F40934 /* MeetingFooterView.swift */; };
+		551F75072B743E1000F40934 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75062B743E1000F40934 /* NewScrumSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		551F75002B74054100F40934 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		551F75022B740D1300F40934 /* CornerRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundedRectangle.swift; sourceTree = "<group>"; };
 		551F75042B74182500F40934 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
+		551F75062B743E1000F40934 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			children = (
 				551F74DC2B72F43600F40934 /* ScrumsView.swift */,
 				551F74D72B72E50C00F40934 /* CardView.swift */,
+				551F75062B743E1000F40934 /* NewScrumSheet.swift */,
 			);
 			path = ScrumsView;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				551F74E92B73A47E00F40934 /* ThemeView.swift in Sources */,
 				551F74F72B74043B00F40934 /* AVPlayer+Ding.swift in Sources */,
 				551F74DD2B72F43600F40934 /* ScrumsView.swift in Sources */,
+				551F75072B743E1000F40934 /* NewScrumSheet.swift in Sources */,
 				551F74F52B7401E900F40934 /* ScrumTimer.swift in Sources */,
 				551F74E02B72F98C00F40934 /* SFSymbols.swift in Sources */,
 				551F74AA2B72D32100F40934 /* MeetingView.swift in Sources */,
