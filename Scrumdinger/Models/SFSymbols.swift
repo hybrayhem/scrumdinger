@@ -18,6 +18,7 @@ enum SFSymbols: String {
     case clock
     case timer
     case paintpalette
+    case person
 
     var name: String {
         return self.rawValue.snakeCaseToDots
