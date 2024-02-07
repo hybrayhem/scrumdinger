@@ -26,6 +26,7 @@ struct DetailEditView: View {
                     Text(lengthInMinutesString).monospacedDigit()
                         .accessibilityHidden(true)
                 }
+                ThemePicker(selection: $scrum.theme)
             }
             
             Section(header: Text("Attendees")) {
