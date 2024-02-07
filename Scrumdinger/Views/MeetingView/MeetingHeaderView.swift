@@ -43,11 +43,6 @@ struct MeetingHeaderView: View {
     private var minutesRemaining: Int { secondsRemaining / 60 }
     
     private var totalSeconds: Int { secondsElapsed + secondsRemaining }
-    
-//    private var progress: Double {
-//        guard totalSeconds > 0 else { return 1 }
-//        return Double(secondsElapsed) / Double(totalSeconds)
-//    }
 }
 
 @available(iOS 17, *)

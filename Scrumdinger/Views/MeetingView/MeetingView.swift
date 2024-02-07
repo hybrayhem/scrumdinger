@@ -9,14 +9,20 @@ import SwiftUI
 
 struct MeetingView: View {
     @Binding var scrum: DailyScrum
+    @StateObject var scrumTimer = ScrumTimer()
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 16)
+            CornerRoundedRectangle(cornerRadius: 16, corners: [.bottomLeft, .bottomRight])
                 .fill(scrum.theme.mainColor)
+                .edgesIgnoringSafeArea(.top)
             VStack {
                 // Header Progress
-                MeetingHeaderView(secondsElapsed: 15, secondsRemaining: 20, theme: scrum.theme)
+                MeetingHeaderView(
+                    secondsElapsed: scrumTimer.secondsElapsed,
+                    secondsRemaining: scrumTimer.secondsRemaining,
+                    theme: scrum.theme
+                )
                 
                 // Mid Circular
                 Circle()
@@ -35,6 +41,15 @@ struct MeetingView: View {
             .padding(22)
             .foregroundColor(scrum.theme.accentColor)
             .navigationBarTitleDisplayMode(.inline)
+            
+            // Life cycle
+            .onAppear {
+                scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+                scrumTimer.startScrum()
+            }
+            .onDisappear {
+                scrumTimer.stopScrum()
+            }
         }
     }
 }
