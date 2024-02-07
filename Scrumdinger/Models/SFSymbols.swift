@@ -9,14 +9,15 @@ import SwiftUI
 
 enum SFSymbols: String {
     case plus
+    case plus_circle_fill
     case hourglass_tophalf_fill
     case hourglass_bottomhalf_fill
     case forward_fill
+    case person
     case person_3
     case clock
     case timer
     case paintpalette
-    case person
 
     var name: String {
         return self.rawValue.snakeCaseToDots
