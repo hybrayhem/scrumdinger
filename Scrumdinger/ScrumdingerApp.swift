@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct ScrumdingerApp: App {
+    @State private var scrums = DailyScrum.sampleData
+    
     var body: some Scene {
         WindowGroup {
-            ScrumsView(scrums: DailyScrum.sampleData)
+            ScrumsView(scrums: $scrums)
         }
     }
 }
+
+
+// Binding used to create two-way binding to a mutable state. A connection between the property that stores data, and the view that displays and changes the data.
+
+// State used to create private mutable state owned by the current view.

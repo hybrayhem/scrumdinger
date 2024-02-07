@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailEditView: View {
     // MARK: - States
-    @State private var scrum = DailyScrum.emptyScrum
+    @Binding var scrum: DailyScrum
     @State private var newAttendeeName = ""
     
     // MARK: - View
@@ -71,5 +71,5 @@ struct DetailEditView: View {
 }
 
 #Preview {
-    DetailEditView()
+    DetailEditView(scrum: .constant(.emptyScrum))
 }
