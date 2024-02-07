@@ -29,6 +29,7 @@
 		551F74F72B74043B00F40934 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74F62B74043B00F40934 /* AVPlayer+Ding.swift */; };
 		551F75012B74054100F40934 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 551F75002B74054100F40934 /* ding.wav */; };
 		551F75032B740D1300F40934 /* CornerRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75022B740D1300F40934 /* CornerRoundedRectangle.swift */; };
+		551F75052B74182500F40934 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75042B74182500F40934 /* MeetingFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		551F74F62B74043B00F40934 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		551F75002B74054100F40934 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		551F75022B740D1300F40934 /* CornerRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundedRectangle.swift; sourceTree = "<group>"; };
+		551F75042B74182500F40934 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				551F74A92B72D32100F40934 /* MeetingView.swift */,
 				551F74ED2B73F53100F40934 /* MeetingHeaderView.swift */,
+				551F75042B74182500F40934 /* MeetingFooterView.swift */,
 			);
 			path = MeetingView;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				551F74E32B72FAA300F40934 /* String+caseConversion.swift in Sources */,
 				551F74EE2B73F53100F40934 /* MeetingHeaderView.swift in Sources */,
 				551F74E72B73951A00F40934 /* DetailEditView.swift in Sources */,
+				551F75052B74182500F40934 /* MeetingFooterView.swift in Sources */,
 				551F75032B740D1300F40934 /* CornerRoundedRectangle.swift in Sources */,
 				551F74EB2B73A5D400F40934 /* ThemePicker.swift in Sources */,
 				551F74A82B72D32100F40934 /* ScrumdingerApp.swift in Sources */,

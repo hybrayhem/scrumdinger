@@ -29,14 +29,10 @@ struct MeetingView: View {
                     .strokeBorder(lineWidth: 22)
                 
                 // Footer
-                HStack {
-                    Text("Speaker 1 of 3")
-                    Spacer()
-                    Button(action: {}, label: {
-                        Image(symbol: .forward_fill)
-                    })
-                    .accessibilityLabel("Next speaker")
-                }
+                MeetingFooterView(
+                    speakers: scrumTimer.speakers,
+                    skipAction: scrumTimer.skipSpeaker
+                )
             }
             .padding(22)
             .foregroundColor(scrum.theme.accentColor)
