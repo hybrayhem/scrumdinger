@@ -19,6 +19,7 @@
 		551F74DD2B72F43600F40934 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74DC2B72F43600F40934 /* ScrumsView.swift */; };
 		551F74E02B72F98C00F40934 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74DF2B72F98C00F40934 /* SFSymbols.swift */; };
 		551F74E32B72FAA300F40934 /* String+caseConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74E22B72FAA300F40934 /* String+caseConversion.swift */; };
+		551F74E52B72FDEA00F40934 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74E42B72FDEA00F40934 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		551F74DC2B72F43600F40934 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		551F74DF2B72F98C00F40934 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
 		551F74E22B72FAA300F40934 /* String+caseConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+caseConversion.swift"; sourceTree = "<group>"; };
+		551F74E42B72FDEA00F40934 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 		551F74D62B72E4FF00F40934 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				551F74DC2B72F43600F40934 /* ScrumsView.swift */,
 				551F74A92B72D32100F40934 /* MeetingView.swift */,
+				551F74DC2B72F43600F40934 /* ScrumsView.swift */,
+				551F74E42B72FDEA00F40934 /* DetailView.swift */,
 				551F74DE2B72F67F00F40934 /* Components */,
 				551F74DB2B72F05200F40934 /* Styles */,
 			);
@@ -205,6 +208,7 @@
 				551F74D52B72E3DC00F40934 /* DailyScrum.swift in Sources */,
 				551F74DA2B72F04D00F40934 /* TrailingIconLabelStyle.swift in Sources */,
 				551F74D32B72E35400F40934 /* Theme.swift in Sources */,
+				551F74E52B72FDEA00F40934 /* DetailView.swift in Sources */,
 				551F74DD2B72F43600F40934 /* ScrumsView.swift in Sources */,
 				551F74E02B72F98C00F40934 /* SFSymbols.swift in Sources */,
 				551F74AA2B72D32100F40934 /* MeetingView.swift in Sources */,
