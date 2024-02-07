@@ -13,17 +13,17 @@ struct DetailView: View {
     var body: some View {
         List {
             Section(header: Text("Meeting Info")) {
-                Label("Start Meeting", systemImage: SFSymbols.timer.name)
+                Label("Start Meeting", symbol: .timer)
                     .font(.headline)
                     .foregroundColor(.accentColor)
                 HStack {
-                    Label("Length", systemImage: SFSymbols.clock.name)
+                    Label("Length", symbol: .clock)
                     Spacer()
                     Text("\(scrum.lengthInMinutes)")
                 }
                 .accessibilityElement(children: .combine) // combine label and text
                 HStack {
-                    Label("Theme", systemImage: SFSymbols.paintpalette.name)
+                    Label("Theme", symbol: .paintpalette)
                     Spacer()
                     Text("\(scrum.theme.name)")
                         .padding(4)
@@ -35,7 +35,7 @@ struct DetailView: View {
             
             Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees) { attendee in
-                    Label("\(attendee.name)", systemImage: SFSymbols.person.name)
+                    Label("\(attendee.name)", symbol: .person)
                 }
             }
         }

@@ -5,9 +5,7 @@
 //  Created by hybrayhem.
 //
 
-import Foundation
-
-
+import SwiftUI
 
 enum SFSymbols: String {
     case plus
@@ -22,5 +20,21 @@ enum SFSymbols: String {
 
     var name: String {
         return self.rawValue.snakeCaseToDots
+    }
+    
+    var image: Image {
+        return Image(systemName: self.name)
+    }
+}
+
+extension Image {
+    init(symbol: SFSymbols) {
+        self.init(systemName: symbol.name)
+    }
+}
+
+extension Label where Title == Text, Icon == Image {
+    init(_ title: String, symbol: SFSymbols) {
+        self.init(title, systemImage: symbol.name)
     }
 }

@@ -16,13 +16,13 @@ struct MeetingView: View {
                 VStack(alignment: .leading) {
                     Text("Seconds Elapsed")
                         .font(.caption)
-                    Label("300", systemImage: SFSymbols.hourglass_tophalf_fill.name)
+                    Label("300", symbol: .hourglass_tophalf_fill)
                 }
                 Spacer()
                 VStack(alignment: .trailing) {
                     Text("Seconds Remaining")
                         .font(.caption)
-                    Label("600", systemImage: SFSymbols.hourglass_bottomhalf_fill.name)
+                    Label("600", symbol: .hourglass_bottomhalf_fill)
                 }
             }
             .accessibilityElement(children: .ignore)
@@ -38,7 +38,7 @@ struct MeetingView: View {
                 Text("Speaker 1 of 3")
                 Spacer()
                 Button(action: {}, label: {
-                    Image(systemName: SFSymbols.forward_fill.name)
+                    Image(symbol: .forward_fill)
                 })
                 .accessibilityLabel("Next speaker")
             }

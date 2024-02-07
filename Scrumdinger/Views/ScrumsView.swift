@@ -22,7 +22,7 @@ struct ScrumsView: View {
             .navigationTitle("Daily Scrums")
             .toolbar {
                 Button(action: {}) {
-                    Image(systemName: SFSymbols.plus.name)
+                    Image(symbol: .plus)
                 }
                 .accessibilityLabel("New scrum")
             }
