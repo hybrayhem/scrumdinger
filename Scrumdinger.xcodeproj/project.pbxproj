@@ -31,6 +31,7 @@
 		551F75032B740D1300F40934 /* CornerRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75022B740D1300F40934 /* CornerRoundedRectangle.swift */; };
 		551F75052B74182500F40934 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75042B74182500F40934 /* MeetingFooterView.swift */; };
 		551F75072B743E1000F40934 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75062B743E1000F40934 /* NewScrumSheet.swift */; };
+		551F75092B74D93000F40934 /* DetailEditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75082B74D93000F40934 /* DetailEditSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		551F75022B740D1300F40934 /* CornerRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundedRectangle.swift; sourceTree = "<group>"; };
 		551F75042B74182500F40934 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		551F75062B743E1000F40934 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
+		551F75082B74D93000F40934 /* DetailEditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				551F74E42B72FDEA00F40934 /* DetailView.swift */,
+				551F75082B74D93000F40934 /* DetailEditSheet.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				551F74F32B73FAD900F40934 /* ScrumProgressViewStyle.swift in Sources */,
 				551F74E32B72FAA300F40934 /* String+caseConversion.swift in Sources */,
 				551F74EE2B73F53100F40934 /* MeetingHeaderView.swift in Sources */,
+				551F75092B74D93000F40934 /* DetailEditSheet.swift in Sources */,
 				551F74E72B73951A00F40934 /* DetailEditView.swift in Sources */,
 				551F75052B74182500F40934 /* MeetingFooterView.swift in Sources */,
 				551F75032B740D1300F40934 /* CornerRoundedRectangle.swift in Sources */,
