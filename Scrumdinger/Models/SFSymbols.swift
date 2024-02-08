@@ -20,6 +20,7 @@ enum SFSymbols: String {
     case paintpalette
     case calendar
     case calendar_badge_exclamationmark
+    case chevron_right
 
     var name: String {
         return self.rawValue.snakeCaseToDots

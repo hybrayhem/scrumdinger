@@ -60,15 +60,14 @@ struct DetailView: View {
                         .opacity(0.5)
                         .frame(maxWidth: .infinity)
 //                    }
-                }
-                ForEach(scrum.histories) { history in
-//                    NavigationLink(destination: HistoryDetailView(history: $history)) {
-                        HStack {
-                            Image(symbol: .calendar)
-                            Text(history.date, style: .date)
-                            Text(history.date, style: .time)
-                        }
-//                    }
+                } else {
+                    ForEach(scrum.histories) { history in
+                        ExpandableLabel(
+                            symbol: .calendar,
+                            text: history.date.dateAndTimeString,
+                            description: history.attendeeListText
+                        )
+                    }
                 }
             }
         }

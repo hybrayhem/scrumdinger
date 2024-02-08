@@ -17,4 +17,8 @@ struct History: Identifiable {
         self.date = date
         self.attendees = attendees
     }
+    
+    var attendeeListText: String {
+        (self.attendees.map { $0.name }).joined(separator: ", ")
+    }
 }
