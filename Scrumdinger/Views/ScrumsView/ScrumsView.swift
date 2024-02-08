@@ -11,6 +11,10 @@ struct ScrumsView: View {
     @Binding var scrums: [DailyScrum]
     @State var isPresentingNewScrumView = false
     
+    // Monitor app activity state
+    @Environment(\.scenePhase) private var scenePhase
+    let saveAction: () -> Void
+    
     var body: some View {
         NavigationStack {
             List($scrums) { $scrum in
@@ -33,11 +37,15 @@ struct ScrumsView: View {
         .sheet(isPresented: $isPresentingNewScrumView) {
             NewScrumSheet(scrums: $scrums, isPresentingNewScrumView: $isPresentingNewScrumView)
         }
+        
+        .onChange(of: scenePhase) { phase in
+            if phase == .inactive { saveAction() }
+        }
     }
 }
 
 #Preview {
     let scrums = DailyScrum.sampleData
     
-    return ScrumsView(scrums: .constant(scrums))
+    return ScrumsView(scrums: .constant(scrums), saveAction: {})
 }

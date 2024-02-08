@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ExpandableLabel: View {
-    @State private var isExpanded = true
+    @State private var isExpanded = false
     let symbol: SFSymbols
     let text: String
     let description: String
