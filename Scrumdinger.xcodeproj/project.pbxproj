@@ -35,6 +35,7 @@
 		551F750B2B74E11500F40934 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F750A2B74E11500F40934 /* History.swift */; };
 		551F750D2B757BC000F40934 /* ExpandableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F750C2B757BC000F40934 /* ExpandableLabel.swift */; };
 		551F750F2B7584F200F40934 /* Date+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F750E2B7584F200F40934 /* Date+format.swift */; };
+		551F75112B758B1800F40934 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75102B758B1800F40934 /* ScrumStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		551F750A2B74E11500F40934 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		551F750C2B757BC000F40934 /* ExpandableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableLabel.swift; sourceTree = "<group>"; };
 		551F750E2B7584F200F40934 /* Date+format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+format.swift"; sourceTree = "<group>"; };
+		551F75102B758B1800F40934 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				551F74D42B72E3DC00F40934 /* DailyScrum.swift */,
 				551F750A2B74E11500F40934 /* History.swift */,
 				551F74D22B72E35400F40934 /* Theme.swift */,
+				551F75102B758B1800F40934 /* ScrumStore.swift */,
 				551F74F42B7401E900F40934 /* ScrumTimer.swift */,
 				551F74DF2B72F98C00F40934 /* SFSymbols.swift */,
 			);
@@ -303,6 +306,7 @@
 				551F74F52B7401E900F40934 /* ScrumTimer.swift in Sources */,
 				551F74E02B72F98C00F40934 /* SFSymbols.swift in Sources */,
 				551F74AA2B72D32100F40934 /* MeetingView.swift in Sources */,
+				551F75112B758B1800F40934 /* ScrumStore.swift in Sources */,
 				551F74F32B73FAD900F40934 /* ScrumProgressViewStyle.swift in Sources */,
 				551F74E32B72FAA300F40934 /* String+caseConversion.swift in Sources */,
 				551F74EE2B73F53100F40934 /* MeetingHeaderView.swift in Sources */,
