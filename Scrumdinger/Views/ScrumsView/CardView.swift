@@ -31,7 +31,7 @@ struct CardView: View {
     }
 }
 
-@available(iOS 17, *)
+@available(iOS 17.0, *)
 #Preview(
     "Design Scrum",
     traits: .fixedLayout(width: 400, height: 60))

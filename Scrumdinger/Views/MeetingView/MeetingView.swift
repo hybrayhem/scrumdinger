@@ -43,19 +43,29 @@ struct MeetingView: View {
             
             // Life cycle
             .onAppear {
-                scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
-                scrumTimer.startScrum()
-                
-                scrumTimer.speakerChangedAction = {
-                    // Play from start
-                    avplayer.seek(to: .zero)
-                    avplayer.play()
-                }
+                startScrum()
             }
             .onDisappear {
-                scrumTimer.stopScrum()
+                endScrum()
             }
         }
+    }
+    
+    func startScrum() {
+        scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+        scrumTimer.startScrum()
+        
+        scrumTimer.speakerChangedAction = {
+            // Play from start
+            avplayer.seek(to: .zero)
+            avplayer.play()
+        }
+    }
+    
+    func endScrum() {
+        scrumTimer.stopScrum()
+        let newHistory = History(attendees: scrum.attendees)
+        scrum.histories.insert(newHistory, at: 0)
     }
 }
 

@@ -45,7 +45,7 @@ struct MeetingHeaderView: View {
     private var totalSeconds: Int { secondsElapsed + secondsRemaining }
 }
 
-@available(iOS 17, *)
+@available(iOS 17.0, *)
 #Preview(traits: .sizeThatFitsLayout) {
     MeetingHeaderView(secondsElapsed: 300, secondsRemaining: 600, theme: .navy)
 }

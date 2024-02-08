@@ -18,6 +18,7 @@ struct DailyScrum: Identifiable {
         set { lengthInMinutes = Int(newValue) }
     }
     var theme: Theme
+    var histories: [History] = []
     
     // Assign a default UUID
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
@@ -68,4 +69,13 @@ extension DailyScrum {
             theme: .poppy
         )
     ]
+    
+    static var sampleDataWithHistory: [DailyScrum] {
+        var scrums = sampleData
+        scrums[0].histories = [
+            History(date: Date(), attendees: [Attendee(name: "Cathy"), Attendee(name: "Simon")]),
+            History(date: Date(timeIntervalSinceNow: TimeInterval(integerLiteral: 12345678)), attendees: [Attendee(name: "Daisy")])
+        ]
+        return scrums
+    }
 }

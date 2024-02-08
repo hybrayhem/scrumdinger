@@ -48,7 +48,7 @@ struct MeetingFooterView: View {
     }
 }
 
-@available(iOS 17, *)
+@available(iOS 17.0, *)
 #Preview(traits: .sizeThatFitsLayout) {
     MeetingFooterView(speakers: DailyScrum.sampleData[0].attendees.speakers, skipAction: {})
 }

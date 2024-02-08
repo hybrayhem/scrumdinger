@@ -43,6 +43,34 @@ struct DetailView: View {
                     Label("\(attendee.name)", symbol: .person)
                 }
             }
+            
+            Section(header: Text("History")) {
+                if scrum.histories.isEmpty {
+//                    if #available(iOS 17.0, *) {
+//                        ContentUnavailableView(
+//                            "No meeting history",
+//                            systemImage: SFSymbols.calendar_badge_exclamationmark.name,
+//                            description: Text("Let's start a meeting.")
+//                        )
+//                    } else {
+                        VStack(alignment: .center) {
+                            Image(symbol: .calendar_badge_exclamationmark)
+                            Text("No meeting history.")
+                        }
+                        .opacity(0.5)
+                        .frame(maxWidth: .infinity)
+//                    }
+                }
+                ForEach(scrum.histories) { history in
+//                    NavigationLink(destination: HistoryDetailView(history: $history)) {
+                        HStack {
+                            Image(symbol: .calendar)
+                            Text(history.date, style: .date)
+                            Text(history.date, style: .time)
+                        }
+//                    }
+                }
+            }
         }
         .navigationTitle(scrum.title)
         .toolbar {
@@ -58,6 +86,6 @@ struct DetailView: View {
 
 #Preview {
     NavigationStack{
-        DetailView(scrum: .constant(DailyScrum.sampleData[0]))
+        DetailView(scrum: .constant(DailyScrum.sampleDataWithHistory[0]))
     }
 }

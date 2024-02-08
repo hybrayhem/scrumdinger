@@ -32,6 +32,7 @@
 		551F75052B74182500F40934 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75042B74182500F40934 /* MeetingFooterView.swift */; };
 		551F75072B743E1000F40934 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75062B743E1000F40934 /* NewScrumSheet.swift */; };
 		551F75092B74D93000F40934 /* DetailEditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75082B74D93000F40934 /* DetailEditSheet.swift */; };
+		551F750B2B74E11500F40934 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F750A2B74E11500F40934 /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		551F75042B74182500F40934 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		551F75062B743E1000F40934 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		551F75082B74D93000F40934 /* DetailEditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditSheet.swift; sourceTree = "<group>"; };
+		551F750A2B74E11500F40934 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				551F74D42B72E3DC00F40934 /* DailyScrum.swift */,
-				551F74F42B7401E900F40934 /* ScrumTimer.swift */,
+				551F750A2B74E11500F40934 /* History.swift */,
 				551F74D22B72E35400F40934 /* Theme.swift */,
+				551F74F42B7401E900F40934 /* ScrumTimer.swift */,
 				551F74DF2B72F98C00F40934 /* SFSymbols.swift */,
 			);
 			path = Models;
@@ -296,6 +299,7 @@
 				551F74F32B73FAD900F40934 /* ScrumProgressViewStyle.swift in Sources */,
 				551F74E32B72FAA300F40934 /* String+caseConversion.swift in Sources */,
 				551F74EE2B73F53100F40934 /* MeetingHeaderView.swift in Sources */,
+				551F750B2B74E11500F40934 /* History.swift in Sources */,
 				551F75092B74D93000F40934 /* DetailEditSheet.swift in Sources */,
 				551F74E72B73951A00F40934 /* DetailEditView.swift in Sources */,
 				551F75052B74182500F40934 /* MeetingFooterView.swift in Sources */,
