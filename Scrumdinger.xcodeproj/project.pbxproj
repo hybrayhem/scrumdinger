@@ -18,7 +18,7 @@
 		551F74DA2B72F04D00F40934 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74D92B72F04D00F40934 /* TrailingIconLabelStyle.swift */; };
 		551F74DD2B72F43600F40934 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74DC2B72F43600F40934 /* ScrumsView.swift */; };
 		551F74E02B72F98C00F40934 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74DF2B72F98C00F40934 /* SFSymbols.swift */; };
-		551F74E32B72FAA300F40934 /* String+caseConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74E22B72FAA300F40934 /* String+caseConversion.swift */; };
+		551F74E32B72FAA300F40934 /* String+CaseConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74E22B72FAA300F40934 /* String+CaseConversion.swift */; };
 		551F74E52B72FDEA00F40934 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74E42B72FDEA00F40934 /* DetailView.swift */; };
 		551F74E72B73951A00F40934 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74E62B73951A00F40934 /* DetailEditView.swift */; };
 		551F74E92B73A47E00F40934 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F74E82B73A47E00F40934 /* ThemeView.swift */; };
@@ -34,8 +34,9 @@
 		551F75092B74D93000F40934 /* DetailEditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75082B74D93000F40934 /* DetailEditSheet.swift */; };
 		551F750B2B74E11500F40934 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F750A2B74E11500F40934 /* History.swift */; };
 		551F750D2B757BC000F40934 /* ExpandableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F750C2B757BC000F40934 /* ExpandableLabel.swift */; };
-		551F750F2B7584F200F40934 /* Date+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F750E2B7584F200F40934 /* Date+format.swift */; };
+		551F750F2B7584F200F40934 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F750E2B7584F200F40934 /* Date+Format.swift */; };
 		551F75112B758B1800F40934 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75102B758B1800F40934 /* ScrumStore.swift */; };
+		551F75132B7641B900F40934 /* View+AdaptiveForegroundStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75122B7641B900F40934 /* View+AdaptiveForegroundStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +52,7 @@
 		551F74D92B72F04D00F40934 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		551F74DC2B72F43600F40934 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		551F74DF2B72F98C00F40934 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
-		551F74E22B72FAA300F40934 /* String+caseConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+caseConversion.swift"; sourceTree = "<group>"; };
+		551F74E22B72FAA300F40934 /* String+CaseConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CaseConversion.swift"; sourceTree = "<group>"; };
 		551F74E42B72FDEA00F40934 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		551F74E62B73951A00F40934 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		551F74E82B73A47E00F40934 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
@@ -67,8 +68,9 @@
 		551F75082B74D93000F40934 /* DetailEditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditSheet.swift; sourceTree = "<group>"; };
 		551F750A2B74E11500F40934 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		551F750C2B757BC000F40934 /* ExpandableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableLabel.swift; sourceTree = "<group>"; };
-		551F750E2B7584F200F40934 /* Date+format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+format.swift"; sourceTree = "<group>"; };
+		551F750E2B7584F200F40934 /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
 		551F75102B758B1800F40934 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
+		551F75122B7641B900F40934 /* View+AdaptiveForegroundStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AdaptiveForegroundStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,9 +170,10 @@
 		551F74E12B72FA8D00F40934 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				551F74E22B72FAA300F40934 /* String+caseConversion.swift */,
+				551F74E22B72FAA300F40934 /* String+CaseConversion.swift */,
 				551F74F62B74043B00F40934 /* AVPlayer+Ding.swift */,
-				551F750E2B7584F200F40934 /* Date+format.swift */,
+				551F750E2B7584F200F40934 /* Date+Format.swift */,
+				551F75122B7641B900F40934 /* View+AdaptiveForegroundStyle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,7 +303,8 @@
 				551F74E52B72FDEA00F40934 /* DetailView.swift in Sources */,
 				551F74E92B73A47E00F40934 /* ThemeView.swift in Sources */,
 				551F74F72B74043B00F40934 /* AVPlayer+Ding.swift in Sources */,
-				551F750F2B7584F200F40934 /* Date+format.swift in Sources */,
+				551F750F2B7584F200F40934 /* Date+Format.swift in Sources */,
+				551F75132B7641B900F40934 /* View+AdaptiveForegroundStyle.swift in Sources */,
 				551F74DD2B72F43600F40934 /* ScrumsView.swift in Sources */,
 				551F75072B743E1000F40934 /* NewScrumSheet.swift in Sources */,
 				551F74F52B7401E900F40934 /* ScrumTimer.swift in Sources */,
@@ -308,7 +312,7 @@
 				551F74AA2B72D32100F40934 /* MeetingView.swift in Sources */,
 				551F75112B758B1800F40934 /* ScrumStore.swift in Sources */,
 				551F74F32B73FAD900F40934 /* ScrumProgressViewStyle.swift in Sources */,
-				551F74E32B72FAA300F40934 /* String+caseConversion.swift in Sources */,
+				551F74E32B72FAA300F40934 /* String+CaseConversion.swift in Sources */,
 				551F74EE2B73F53100F40934 /* MeetingHeaderView.swift in Sources */,
 				551F750B2B74E11500F40934 /* History.swift in Sources */,
 				551F75092B74D93000F40934 /* DetailEditSheet.swift in Sources */,
