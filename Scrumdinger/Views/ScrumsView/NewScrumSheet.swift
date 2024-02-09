@@ -13,7 +13,7 @@ struct NewScrumSheet: View {
     @State private var newScrum = DailyScrum.emptyScrum
     
     var body: some View {
-        NavigationStack {
+        AdaptiveNavigationStack {
             DetailEditView(scrum: $newScrum)
                 .toolbar {
                     ToolbarItem(placement: .cancellationAction) {

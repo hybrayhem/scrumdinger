@@ -13,7 +13,7 @@ struct DetailEditSheet: View {
     @State private var editingScrum = DailyScrum.emptyScrum
     
     var body: some View {
-        NavigationStack {
+        AdaptiveNavigationStack {
             DetailEditView(scrum: $editingScrum)
                 .navigationTitle(editingScrum.title)
                 .toolbar {

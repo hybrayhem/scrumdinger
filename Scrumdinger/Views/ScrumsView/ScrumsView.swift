@@ -16,7 +16,7 @@ struct ScrumsView: View {
     let saveAction: () -> Void
     
     var body: some View {
-        NavigationStack {
+        AdaptiveNavigationStack {
             List($scrums) { $scrum in
                 NavigationLink(destination: DetailView(scrum: $scrum)) {
                     CardView(scrum: scrum)

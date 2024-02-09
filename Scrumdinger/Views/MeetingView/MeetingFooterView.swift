@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// TODO: Fix timer logic
+// TODO: Fix timer ending logic
 struct MeetingFooterView: View {
     // Properties
     let speakers: [ScrumTimer.Speaker]

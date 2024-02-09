@@ -84,7 +84,7 @@ struct DetailView: View {
 }
 
 #Preview {
-    NavigationStack{
+    AdaptiveNavigationStack{
         DetailView(scrum: .constant(DailyScrum.sampleDataWithHistory[0]))
     }
 }
