@@ -13,23 +13,28 @@ struct ScrumdingerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ScrumsView(scrums: $store.scrums, saveAction: {
-                // Save on exit
-                Task {
-                    do {
-                        try await store.save(changedScrums: store.scrums)
-                    } catch {
-                        fatalError(error.localizedDescription) // TODO: Show alert
-                    }
-                }
-            })
-            // Load on start
-            .task {
-                do {
-                    try await store.load()
-                } catch {
-                    fatalError(error.localizedDescription) // TODO: Show alert
-                }
+            ScrumsView(
+                scrums: $store.scrums,
+                saveAction: { storeSave() } // Save on exit
+            )
+            .task { await storeLoad() } // Load on start
+        }
+    }
+    
+    private func storeLoad() async {
+        do {
+            try await store.load()
+        } catch {
+            fatalError(error.localizedDescription) // TODO: Show alert
+        }
+    }
+    
+    private func storeSave() {
+        Task {
+            do {
+                try await store.save(changedScrums: store.scrums)
+            } catch {
+                fatalError(error.localizedDescription) // TODO: Show alert
             }
         }
     }
