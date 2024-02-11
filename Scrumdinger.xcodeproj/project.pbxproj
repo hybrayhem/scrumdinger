@@ -39,6 +39,8 @@
 		551F75132B7641B900F40934 /* View+AdaptiveForegroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75122B7641B900F40934 /* View+AdaptiveForegroundColor.swift */; };
 		551F75152B7643C100F40934 /* AdaptiveNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75142B7643C100F40934 /* AdaptiveNavigationStack.swift */; };
 		551F75172B76481F00F40934 /* Picker+AdaptivePickerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75162B76481F00F40934 /* Picker+AdaptivePickerStyle.swift */; };
+		5541AB272B77CB6B000F23C8 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541AB262B77CB6B000F23C8 /* ErrorWrapper.swift */; };
+		5541AB292B77CBC7000F23C8 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541AB282B77CBC7000F23C8 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,9 @@
 		551F75122B7641B900F40934 /* View+AdaptiveForegroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AdaptiveForegroundColor.swift"; sourceTree = "<group>"; };
 		551F75142B7643C100F40934 /* AdaptiveNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveNavigationStack.swift; sourceTree = "<group>"; };
 		551F75162B76481F00F40934 /* Picker+AdaptivePickerStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picker+AdaptivePickerStyle.swift"; sourceTree = "<group>"; };
+		5541AB262B77CB6B000F23C8 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		5541AB282B77CBC7000F23C8 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		5541AB2B2B77FC31000F23C8 /* get_simulation_data_directory.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = get_simulation_data_directory.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				551F74CF2B72D91500F40934 /* .gitignore */,
+				5541AB2A2B77FC07000F23C8 /* Tools */,
 				551F74A62B72D32100F40934 /* Scrumdinger */,
 				551F74A52B72D32100F40934 /* Products */,
 			);
@@ -138,6 +144,7 @@
 				551F75102B758B1800F40934 /* ScrumStore.swift */,
 				551F74F42B7401E900F40934 /* ScrumTimer.swift */,
 				551F74DF2B72F98C00F40934 /* SFSymbols.swift */,
+				5541AB262B77CB6B000F23C8 /* ErrorWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +175,7 @@
 				551F75022B740D1300F40934 /* CornerRoundedRectangle.swift */,
 				551F750C2B757BC000F40934 /* ExpandableLabel.swift */,
 				551F75142B7643C100F40934 /* AdaptiveNavigationStack.swift */,
+				5541AB282B77CBC7000F23C8 /* ErrorView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -229,6 +237,14 @@
 				551F75002B74054100F40934 /* ding.wav */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5541AB2A2B77FC07000F23C8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5541AB2B2B77FC31000F23C8 /* get_simulation_data_directory.sh */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +336,7 @@
 				551F74AA2B72D32100F40934 /* MeetingView.swift in Sources */,
 				551F75112B758B1800F40934 /* ScrumStore.swift in Sources */,
 				551F74F32B73FAD900F40934 /* ScrumProgressViewStyle.swift in Sources */,
+				5541AB272B77CB6B000F23C8 /* ErrorWrapper.swift in Sources */,
 				551F74E32B72FAA300F40934 /* String+CaseConversion.swift in Sources */,
 				551F74EE2B73F53100F40934 /* MeetingHeaderView.swift in Sources */,
 				551F750B2B74E11500F40934 /* History.swift in Sources */,
@@ -327,6 +344,7 @@
 				551F750D2B757BC000F40934 /* ExpandableLabel.swift in Sources */,
 				551F74E72B73951A00F40934 /* DetailEditView.swift in Sources */,
 				551F75052B74182500F40934 /* MeetingFooterView.swift in Sources */,
+				5541AB292B77CBC7000F23C8 /* ErrorView.swift in Sources */,
 				551F75032B740D1300F40934 /* CornerRoundedRectangle.swift in Sources */,
 				551F74EB2B73A5D400F40934 /* ThemePicker.swift in Sources */,
 				551F74A82B72D32100F40934 /* ScrumdingerApp.swift in Sources */,
