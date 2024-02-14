@@ -135,6 +135,17 @@ final class ScrumTimer: ObservableObject {
     }
 }
 
+// MARK: Helper Properties
+extension ScrumTimer {
+    var totalProgress: Double {
+        Double(secondsElapsed) / Double(secondsElapsed + secondsRemaining)
+    }
+    var speakerProgress: Double {
+        let elapsedForSpeaker = secondsElapsed - (secondsPerSpeaker * speakerIndex)
+        print("Elapsed for speaker: \(elapsedForSpeaker)")
+        return Double(elapsedForSpeaker) / Double(secondsPerSpeaker)
+    }
+}
 
 extension Array<DailyScrum.Attendee> {
     var speakers: [ScrumTimer.Speaker] {

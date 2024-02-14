@@ -41,6 +41,8 @@
 		551F75172B76481F00F40934 /* Picker+AdaptivePickerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F75162B76481F00F40934 /* Picker+AdaptivePickerStyle.swift */; };
 		5541AB272B77CB6B000F23C8 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541AB262B77CB6B000F23C8 /* ErrorWrapper.swift */; };
 		5541AB292B77CBC7000F23C8 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541AB282B77CBC7000F23C8 /* ErrorView.swift */; };
+		5541AB2D2B790FAC000F23C8 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541AB2C2B790FAC000F23C8 /* MeetingTimerView.swift */; };
+		5541AB2F2B791257000F23C8 /* SpeakerArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541AB2E2B791257000F23C8 /* SpeakerArcView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		5541AB262B77CB6B000F23C8 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		5541AB282B77CBC7000F23C8 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		5541AB2B2B77FC31000F23C8 /* get_simulation_data_directory.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = get_simulation_data_directory.sh; sourceTree = "<group>"; };
+		5541AB2C2B790FAC000F23C8 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		5541AB2E2B791257000F23C8 /* SpeakerArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArcView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				551F75022B740D1300F40934 /* CornerRoundedRectangle.swift */,
-				551F750C2B757BC000F40934 /* ExpandableLabel.swift */,
 				551F75142B7643C100F40934 /* AdaptiveNavigationStack.swift */,
+				551F750C2B757BC000F40934 /* ExpandableLabel.swift */,
 				5541AB282B77CBC7000F23C8 /* ErrorView.swift */,
 			);
 			path = Components;
@@ -198,6 +202,8 @@
 				551F74A92B72D32100F40934 /* MeetingView.swift */,
 				551F74ED2B73F53100F40934 /* MeetingHeaderView.swift */,
 				551F75042B74182500F40934 /* MeetingFooterView.swift */,
+				5541AB2C2B790FAC000F23C8 /* MeetingTimerView.swift */,
+				5541AB2E2B791257000F23C8 /* SpeakerArcView.swift */,
 			);
 			path = MeetingView;
 			sourceTree = "<group>";
@@ -331,8 +337,10 @@
 				551F74DD2B72F43600F40934 /* ScrumsView.swift in Sources */,
 				551F75172B76481F00F40934 /* Picker+AdaptivePickerStyle.swift in Sources */,
 				551F75072B743E1000F40934 /* NewScrumSheet.swift in Sources */,
+				5541AB2F2B791257000F23C8 /* SpeakerArcView.swift in Sources */,
 				551F74F52B7401E900F40934 /* ScrumTimer.swift in Sources */,
 				551F74E02B72F98C00F40934 /* SFSymbols.swift in Sources */,
+				5541AB2D2B790FAC000F23C8 /* MeetingTimerView.swift in Sources */,
 				551F74AA2B72D32100F40934 /* MeetingView.swift in Sources */,
 				551F75112B758B1800F40934 /* ScrumStore.swift in Sources */,
 				551F74F32B73FAD900F40934 /* ScrumProgressViewStyle.swift in Sources */,
