@@ -142,7 +142,6 @@ extension ScrumTimer {
     }
     var speakerProgress: Double {
         let elapsedForSpeaker = secondsElapsed - (secondsPerSpeaker * speakerIndex)
-        print("Elapsed for speaker: \(elapsedForSpeaker)")
         return Double(elapsedForSpeaker) / Double(secondsPerSpeaker)
     }
 }

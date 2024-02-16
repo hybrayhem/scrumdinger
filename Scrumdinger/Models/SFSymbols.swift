@@ -21,6 +21,8 @@ enum SFSymbols: String {
     case calendar
     case calendar_badge_exclamationmark
     case chevron_right
+    case mic
+    case mic_slash
 
     var name: String {
         return self.rawValue.snakeCaseToDots
