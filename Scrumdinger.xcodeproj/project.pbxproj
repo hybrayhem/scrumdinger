@@ -45,6 +45,7 @@
 		5541AB2F2B791257000F23C8 /* SpeakerArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541AB2E2B791257000F23C8 /* SpeakerArcView.swift */; };
 		5541AB312B7F546A000F23C8 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541AB302B7F546A000F23C8 /* SpeechRecognizer.swift */; };
 		5541AB332B7F58CD000F23C8 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541AB322B7F58CD000F23C8 /* Animations.swift */; };
+		5541AB352B800B23000F23C8 /* FlashingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541AB342B800B23000F23C8 /* FlashingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		5541AB2E2B791257000F23C8 /* SpeakerArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArcView.swift; sourceTree = "<group>"; };
 		5541AB302B7F546A000F23C8 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		5541AB322B7F58CD000F23C8 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		5541AB342B800B23000F23C8 /* FlashingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				551F75142B7643C100F40934 /* AdaptiveNavigationStack.swift */,
 				551F750C2B757BC000F40934 /* ExpandableLabel.swift */,
 				5541AB282B77CBC7000F23C8 /* ErrorView.swift */,
+				5541AB342B800B23000F23C8 /* FlashingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				551F74E32B72FAA300F40934 /* String+CaseConversion.swift in Sources */,
 				551F74EE2B73F53100F40934 /* MeetingHeaderView.swift in Sources */,
 				551F750B2B74E11500F40934 /* History.swift in Sources */,
+				5541AB352B800B23000F23C8 /* FlashingView.swift in Sources */,
 				551F75092B74D93000F40934 /* DetailEditSheet.swift in Sources */,
 				551F750D2B757BC000F40934 /* ExpandableLabel.swift in Sources */,
 				551F74E72B73951A00F40934 /* DetailEditView.swift in Sources */,

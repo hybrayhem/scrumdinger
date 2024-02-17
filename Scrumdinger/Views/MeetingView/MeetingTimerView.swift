@@ -28,10 +28,22 @@ struct MeetingTimerView: View {
             Text(currentSpeaker)
                 .font(.title)
             Text("is speaking")
+            
+            // Method 1
             Image(symbol: isRecording ? .mic : .mic_slash)
                 .font(.title)
                 .padding(.top)
+                .modifier(Animations.flashing(shouldFlash: true))
+                .adaptiveForegroundColor(isRecording ? .red : .primary)
                 .accessibilityLabel(isRecording ? "with transcription" : "without transcription")
+            
+            // Method 2
+//            FlashingView(shouldFlash: isRecording) {
+//                Image(symbol: isRecording ? .mic : .mic_slash)
+//                    .font(.title)
+//                    .padding(.top)
+//                    .adaptiveForegroundColor(isRecording ? .red : .primary)
+//            }
         }
         .accessibilityElement(children: .combine)
         .adaptiveForegroundColor(theme.accentColor)
