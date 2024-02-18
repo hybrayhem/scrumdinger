@@ -66,7 +66,16 @@ struct DetailView: View {
                             symbol: .calendar,
                             text: history.date.dateAndTimeString,
                             description: history.attendeeListText
-                        )
+                        ) {
+                            if history.transcript != nil {
+                                HiddenNavigationLink(destination: HistoryDetailView()) {
+                                    Text("Transcription")
+                                        .font(.footnote)
+                                        .adaptiveForegroundColor(.blue)
+                                }
+
+                            }
+                        }
                     }
                 }
             }
