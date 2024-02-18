@@ -21,6 +21,7 @@ struct History: Identifiable, Codable {
     }
     
     var attendeeListText: String {
-        (self.attendees.map { $0.name }).joined(separator: ", ")
+//        (self.attendees.map { $0.name }).joined(separator: ", ")
+        ListFormatter.localizedString(byJoining: attendees.map { $0.name })
     }
 }

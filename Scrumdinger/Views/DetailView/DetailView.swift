@@ -68,8 +68,10 @@ struct DetailView: View {
                             description: history.attendeeListText
                         ) {
                             if history.transcript != nil {
-                                HiddenNavigationLink(destination: HistoryDetailView()) {
-                                    Text("Transcription")
+                                HiddenNavigationLink(
+                                    destination: HistoryDetailView(history: history)
+                                ) {
+                                    Text("Transcript")
                                         .font(.footnote)
                                         .adaptiveForegroundColor(.blue)
                                 }
