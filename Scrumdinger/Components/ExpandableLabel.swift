@@ -12,12 +12,13 @@ struct ExpandableLabel<Content: View>: View {
     let symbol: SFSymbols
     let text: String
     let description: String
-    let content: Content
+    let content: Content?
     
-    init(symbol: SFSymbols, text: String, description: String, @ViewBuilder content: () -> Content) {
+    init(symbol: SFSymbols, text: String, description: String, @ViewBuilder content: @escaping () -> Content? = { nil }) {
         self.symbol = symbol
         self.text = text
         self.description = description
+        print(content, content())
         self.content = content()
     }
     
@@ -54,7 +55,7 @@ struct ExpandableLabel<Content: View>: View {
                         }
                     }
                     
-                    if isExpanded {
+                    if isExpanded, content != nil  {
                         content
                     }
                 }

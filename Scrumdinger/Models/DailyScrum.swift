@@ -79,7 +79,8 @@ extension DailyScrum {
     static var sampleDataWithHistory: [DailyScrum] {
         var scrums = sampleData
         scrums[0].histories = [
-            History(date: Date(), attendees: [Attendee(name: "Cathy"), Attendee(name: "Simon")]),
+            History(date: Date(), attendees: [Attendee(name: "Cathy"), Attendee(name: "Simon")],
+                    transcript: "Darla, would you like to start today? Sure, yesterday I reviewed Luis' PR and met with the design team to finalize the UI..."),
             History(date: Date(timeIntervalSinceNow: TimeInterval(integerLiteral: 12345678)), attendees: [Attendee(name: "Daisy")])
         ]
         return scrums
