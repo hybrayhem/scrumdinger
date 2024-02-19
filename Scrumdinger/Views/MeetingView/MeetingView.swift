@@ -32,8 +32,9 @@ struct MeetingView: View {
                 MeetingTimerView(
                     speakers: scrumTimer.speakers,
                     speakerProgress: scrumTimer.speakerProgress,
-                    isRecording: isRecording,
-                    theme: scrum.theme)
+                    theme: scrum.theme,
+                    isRecording: $isRecording)
+                .id(isRecording) // force redraw, may be removed
                 
                 // Footer
                 MeetingFooterView(

@@ -10,8 +10,8 @@ import SwiftUI
 struct MeetingTimerView: View {
     let speakers: [ScrumTimer.Speaker]
     let speakerProgress: Double
-    let isRecording: Bool
     let theme: Theme
+    @Binding var isRecording: Bool
     
     // View
     var body: some View {
@@ -87,5 +87,5 @@ struct MeetingTimerView: View {
                     ScrumTimer.Speaker(name: "Charlie", isCompleted: false),
                     ScrumTimer.Speaker(name: "Cathy", isCompleted: false)]
     
-    return MeetingTimerView(speakers: speakers, speakerProgress: 0.4, isRecording: true, theme: .seafoam)
+    return MeetingTimerView(speakers: speakers, speakerProgress: 0.4, theme: .seafoam, isRecording: .constant(true))
 }
