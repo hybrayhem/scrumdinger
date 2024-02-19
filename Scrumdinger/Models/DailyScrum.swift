@@ -34,11 +34,11 @@ struct DailyScrum: Identifiable, Codable {
     }
 }
 
-extension DailyScrum: Equatable {
-    static func == (lhs: DailyScrum, rhs: DailyScrum) -> Bool {
-        return lhs.id == rhs.id
-    }
-}
+//extension DailyScrum: Equatable {
+//    static func == (lhs: DailyScrum, rhs: DailyScrum) -> Bool {
+//        return lhs.id == rhs.id
+//    }
+//}
 
 extension DailyScrum {
     struct Attendee: Identifiable, Codable {

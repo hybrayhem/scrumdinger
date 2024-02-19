@@ -9,15 +9,16 @@ import Foundation
 
 // Observable Data Source for Views
 @MainActor
-class ScrumStore: ObservableObject {
-    @Published var scrums: [DailyScrum] = [] { // runs on main thread since subscribers are views
-        didSet {
-            Task {
-                do { try await save(changedScrums: scrums) }
-                catch { print(error.localizedDescription) }
-            }
-        }
-    }
+class ScrumStore: ObservableObject { // runs on main thread since subscribers are views
+    @Published var scrums: [DailyScrum] = []
+//    {
+//        didSet {
+//            Task {
+//                do { try await save(changedScrums: scrums) }
+//                catch { print(error.localizedDescription) }
+//            }
+//        }
+//    }
     
     private static let dataFileName = "scrums.data"
     private static func fileURL() throws -> URL {
